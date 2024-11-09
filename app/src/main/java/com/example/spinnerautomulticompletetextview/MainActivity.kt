@@ -49,13 +49,7 @@ class MainActivity : AppCompatActivity() {
             insets
         }
 
-        spinner = findViewById(R.id.spinner)
-        toolbarMain = findViewById(R.id.toolbarMain)
-        listViewLV = findViewById(R.id.listViewLV)
-        saveBTN = findViewById(R.id.saveBTN)
-        nameET = findViewById(R.id.nameET)
-        secondNameET = findViewById(R.id.secondNameET)
-        ageET = findViewById(R.id.ageET)
+        init()
 
         setSupportActionBar(toolbarMain)
         title = "Подбор персонала"
@@ -96,11 +90,25 @@ class MainActivity : AppCompatActivity() {
             listViewLV.adapter = listAdapter
             listAdapter?.notifyDataSetChanged()
 
-            nameET.text.clear()
-            secondNameET.text.clear()
-            ageET.text.clear()
-            spinner.setSelection(0)
+            clearEditFields()
         }
+    }
+
+    private fun clearEditFields() {
+        nameET.text.clear()
+        secondNameET.text.clear()
+        ageET.text.clear()
+        spinner.setSelection(0)
+    }
+
+    private fun init() {
+        spinner = findViewById(R.id.spinner)
+        toolbarMain = findViewById(R.id.toolbarMain)
+        listViewLV = findViewById(R.id.listViewLV)
+        saveBTN = findViewById(R.id.saveBTN)
+        nameET = findViewById(R.id.nameET)
+        secondNameET = findViewById(R.id.secondNameET)
+        ageET = findViewById(R.id.ageET)
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
