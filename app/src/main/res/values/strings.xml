@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">SpinnerAutoMultiCompleteTextView</string>
+    <string name="exit">Exit</string>
+    <string name="name">Введите имя</string>
+    <string name="second_name">Введите фамилию</string>
+    <string name="age">Введите возраст</string>
+    <string name="save">Сохранить</string>
+    <string name="name_item">Имя</string>
+    <string name="second_name_item">Фамилия</string>
+    <string name="job_title">Должность</string>
+    <string name="age_item">Возраст</string>
+</resources>
